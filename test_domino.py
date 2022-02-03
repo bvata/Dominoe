@@ -10,14 +10,11 @@ class Domino:
          self.Player=self.radgen()
          self.gjej_max()
          self.count=0
-         self.numrimi=0
          self.dic={}
          self.score={}
          self.depozita=[]
          self.Mbylle=False
          self.numri=0
-         self.check_if_draw_pc=False
-         self.check_if_draw_player=False
      def population(self):
          for i in range(7):
             for j in range(7):
