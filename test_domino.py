@@ -34,7 +34,6 @@ class Domino:
           n+=1
          return list_random_from_stack
      def gjej_max(self):
-         #print("Lojtari pieces jane: ",(self.Player),"\n")
          self.max=[]
          for i in self.Player:
           if i>self.max:
@@ -48,15 +47,10 @@ class Domino:
          else:
            self.Player.remove(self.max)
            self.rradha=True
-     def printimi(self):#Ky funksion luan rolin e Display per lojtarin
+     def printimi(self):
        print(70 * "=")
        print("Stock pieces: ",len(self.dominoes))
        print("Computer pieces: ",len(self.Computer),"\n")
-      #  print("Computer pieces jane: ",(self.Computer),"\n")
-      #  print("Stock pieces jane: ",(self.dominoes),"\n")
-       
-      #  print("max: ",(self.max),"\n")
-      #  print("vlera: ",(self.vlera),"\n")
        if len(self.vlera)>6:
            print(self.vlera[0],self.vlera[1],self.vlera[2],"...",self.vlera[-3],self.vlera[-2],self.vlera[-1])
        else:
@@ -70,20 +64,20 @@ class Domino:
               for i in range(0,7):
                   self.dic[i]=0
                   #print(dic[i])
-     def calculate_stone(self): #Calculate the score
+     def calculate_stone(self):
               self.populate_dictionary()
               for i,j in self.Computer:
                   if i and j in self.dic.keys():
                     self.dic[i]=self.dic[i]+1
                     self.dic[j]=self.dic[j]+1
-     def database_score(self):# Append the scores in the database
+     def database_score(self):
               self.calculate_stone()
               for i,j in self.Computer:
                 if i==j:
                     self.score[i,j]=self.dic[i]
                 else:
                     self.score[i,j]=self.dic[i]+self.dic[j]
-                #"self.score eshte:")
+                
      def print_score(self):# Print the score
               self.database_score()
               # for self.k,self.v in self.score.items():
@@ -109,7 +103,6 @@ class Domino:
                           index_computer=self.Computer.index(elem)
                           pop_computer=self.Computer.pop(index_computer)
                           self.score.pop(tuple(elem))
-                          #print("elem 1",elem)
                           self.numri=1
                           break
                       if elem[1]==self.vlera[0][0]:
@@ -117,7 +110,6 @@ class Domino:
                           index_computer=self.Computer.index(elem)
                           pop_computer=self.Computer.pop(index_computer)
                           self.score.pop(tuple(elem))
-                          #print("elem 2",elem)
                           self.numri=1
                           break
                       if (elem[0]==self.vlera[-1][1]):
@@ -125,7 +117,6 @@ class Domino:
                           index_computer=self.Computer.index(elem)
                           pop_computer=self.Computer.pop(index_computer)
                           self.score.pop(tuple(elem))
-                          #print("elem 3",elem)
                           self.numri=1
                           break
                       if elem[1]==self.vlera[-1][1]:
@@ -133,60 +124,44 @@ class Domino:
                           index_computer=self.Computer.index(elem)
                           pop_computer=self.Computer.pop(index_computer)
                           self.score.pop(tuple(elem))
-                          #print("elem 4",elem)
                           self.numri=1
                           break
-              #print("Komjuteri ka keto gure: \n",self.Computer,"\nGuri i zgjedhur eshte: ",elem)
               if self.numri==0:
-                      #print("Mori nga stoku toku")
                       self.merr_stock(0)
                       self.rradha=False
               self.numri=0
      def kontrolli_Lojtar(self):
                 while abs(self.user)>len(self.Player)+1:
-                  #print("While mrena kontroli kur abs vlera eshte me e madhe")
                   print("Invalid input. Please try again.")
                   self.user_input()
-                  #self.check_piece()
                 old_list=self.Player[:]
                 guri_lojtar=[self.Player.pop(abs(self.user)-1)]#hoqem -1
                 guri_lojtar_invertum=guri_lojtar[0][::-1]
                 if self.user>0:
-                    #print("if self.user>0: tek kontrolli_Lojtar, user eshte: '{}' dhe guri eshte {}".format(self.user,guri_lojtar))
                     if self.fut_djathtas(guri_lojtar,guri_lojtar_invertum) == False:
                         self.Player=old_list
                         return False      
                 if self.user<0:
                     if self.fut_majtas(guri_lojtar,guri_lojtar_invertum) == False:
-                        #print("if self.user>0: tek kontrolli_Lojtar, user eshte: '{}' dhe guri eshte {}".format(self.user,guri_lojtar))
                         self.Player=old_list
                         return False      
                 return True  
      def fut_majtas(self,piece,piece_inver):
             if self.vlera[0][0] == piece[0][1]:
-                  #print("Majtas check guri",piece[0])
-                  #print("njesh")
+
                   self.vlera.insert(0,piece[0])
                   return True
-            #Kthen gurin dhe e fut majtas
             elif self.vlera[0][0] == piece_inver[1]:
-                  #print("Majtas check guri invert",piece_inver)
                   self.vlera.insert(0,piece_inver)
-                  #print("dysh")
                   return True
             else:
                   return False
      def fut_djathtas(self,piece,piece_inver):
             if self.vlera[-1][1] == piece[0][0]:
-                  #print("Djathtas check guri",piece[0])
                   self.vlera.append(piece[0])
-                  #print("tresh")
                   return True
-            #Kthen gurin dhe e fut djathtas
             elif self.vlera[-1][1] == piece_inver[0]:
-                  #print("Djathtas check guri invert",piece_inver)
                   self.vlera.append(piece_inver)
-                  #print("kater")
                   return True
             else:
                   return False      
@@ -204,17 +179,12 @@ class Domino:
           self.user=int(self.user)
      def check_if_draw_true(self):
                 funksioni=self.Computer+self.Player+self.dominoes
-                #print("funksioni eshte: lalala",funksioni)
                 count=0
                 for el1 in funksioni:
                       for kursori in range(2):
-                          #print("elementi i funksionit eshte:",el1)
-                          #print(el1[kursori] == self.vlera[0][0]) or (el1[kursori] == self.vlera[-1][1])
                           if (el1[kursori] == self.vlera[0][0]) or (el1[kursori] == self.vlera[-1][1]):
-                              print("self.count eshte:",count)
                               count+=1
                 if count==0:
-                              #print('vjen te truja')
                               return True
      def check_if_draw(self):
                 if self.check_if_draw_true():
@@ -225,7 +195,6 @@ class Domino:
                 else:
                       pass
      def merr_stock(self,funk):
-          #print("Sa eshte self.count",self.count)
           if len(self.dominoes)>0 and funk==1:
                 self.Player.append(self.dominoes.pop())
                 self.rradha=True
@@ -239,24 +208,22 @@ class Domino:
      def fillon_loja(self):
       if self.Mbylle==False:
         self.vlera=[self.max]
-      #Maron funksioni printimi() dhe fillon while 
       while (len(self.Player)!=0 or len(self.Computer)!=0) and self.Mbylle == False:
        self.printimi()
-       if self.rradha:# Kur e ke rradhen PC self.rradha=True
+       if self.rradha:
         print("Status: Computer is about to make a move. Press Enter to continue...")
-        computer_value_input=input() # nga computer_value_input deri tek computer_value_input mrena while perdoret per te kontrolluar qe karakteri qe do merret eshte enter
+        computer_value_input=input() 
         while computer_value_input!='':
            print("Press enter and not another character for the computer to make a move")
            computer_value_input=input()
         if self.Computer!=[]:
-          #self.check_if_draw(0)
           self.futet_elementi_ne_fushe()
         self.rradha=False
         if self.Computer==[]:
           self.printimi()
           print("Status: The game is over. The computer won!")
           break
-       else: # Kur rradhen e ka Lojtari , self.rradha=False
+       else:
           self.user_input()
           if len(self.Player)>0:
            if self.user==0:
@@ -269,8 +236,6 @@ class Domino:
                   else:     
                             print("Illegal move. Please try again.")
                             self.user_input()
-                            #print("Kur eshte ilegal move mrena while self.kontrolli_Lojtar()==False: rreshti 199 , user eshte: ",self.user)
-            #self.check_if_draw(1)
           self.rradha=True
           if self.Player==[]:
             self.printimi()
