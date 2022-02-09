@@ -11,7 +11,9 @@ Dominoe project
 - When is the Computer's turn, just type enter as the "Status: ..." suggests.
 - The game will draw if no one has pieces anymore and this will be calculated at each step
 - The Computer has AI integrated to choose the best piece to mode, so there is some level of inteligence added in order to give some chances to the Computer to win.
-- Wish you the best of luck.
+- Enjoy
+
+======================================================================
 Example:
 
 Step1
