@@ -47,7 +47,6 @@ Your pieces:
 - Status: Computer is about to make a move. Press Enter to continue...
 
 Step 2
-
 ======================================================================
 Stock pieces:  14
 Computer pieces:  5
@@ -77,6 +76,7 @@ Your pieces:
 
 - Status: Computer is about to make a move. Press Enter to continue...
 
+Step 3 
 ======================================================================
 Stock pieces:  14
 Computer pieces:  4
@@ -89,7 +89,6 @@ Your pieces:
 3:[1, 5]
 4:[2, 6]
 
-Step 3 
 - Status: It's your turn to make a move. Enter your command.
 0
 ======================================================================
