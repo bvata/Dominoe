@@ -29,7 +29,7 @@ Your pieces:
 5:[1, 6]
 6:[2, 6]
 
-Status: It's your turn to make a move. Enter your command.
+ - Status: It's your turn to make a move. Enter your command.
 5
 ======================================================================
 Stock pieces:  14
@@ -44,7 +44,7 @@ Your pieces:
 4:[1, 5]
 5:[2, 6]
 
-Status: Computer is about to make a move. Press Enter to continue...
+- Status: Computer is about to make a move. Press Enter to continue...
 
 Step 2
 
@@ -61,7 +61,7 @@ Your pieces:
 4:[1, 5]
 5:[2, 6]
 
-Status: It's your turn to make a move. Enter your command.
+- Status: It's your turn to make a move. Enter your command.
 -1
 ======================================================================
 Stock pieces:  14
@@ -75,7 +75,7 @@ Your pieces:
 3:[1, 5]
 4:[2, 6]
 
-Status: Computer is about to make a move. Press Enter to continue...
+- Status: Computer is about to make a move. Press Enter to continue...
 
 ======================================================================
 Stock pieces:  14
@@ -90,7 +90,7 @@ Your pieces:
 4:[2, 6]
 
 Step 3 
-Status: It's your turn to make a move. Enter your command.
+- Status: It's your turn to make a move. Enter your command.
 0
 ======================================================================
 Stock pieces:  13
