@@ -21,8 +21,8 @@ Dominoe project
 
 Example: Step1
 ======================================================================
-Stock pieces:  14
-Computer pieces:  6
+- Stock pieces:  14
+- Computer pieces:  6
 
 [3, 6][6, 6] 
 
@@ -37,8 +37,8 @@ Your pieces:
  - Status: It's your turn to make a move. Enter your command.
 5
 ======================================================================
-Stock pieces:  14
-Computer pieces:  6
+- Stock pieces:  14
+- Computer pieces:  6
 
 [3, 6][6, 6][6, 1] <----
 
@@ -53,8 +53,8 @@ Your pieces:
 
 Step 2
 ======================================================================
-Stock pieces:  14
-Computer pieces:  5
+- Stock pieces:  14
+- Computer pieces:  6
 
 [4, 3][3, 6][6, 6][6, 1]
 
@@ -68,8 +68,8 @@ Your pieces:
 - Status: It's your turn to make a move. Enter your command.
 -1
 ======================================================================
-Stock pieces:  14
-Computer pieces:  5
+- Stock pieces:  14
+- Computer pieces:  6
 
 ----> [4, 4][4, 3][3, 6][6, 6][6, 1]
 
@@ -83,9 +83,8 @@ Your pieces:
 
 Step 3 
 ======================================================================
-Stock pieces:  14
-Computer pieces:  4
-
+- Stock pieces:  14
+- Computer pieces:  6
 [1, 4][4, 4][4, 3][3, 6][6, 6][6, 1]
 
 Your pieces:
@@ -97,8 +96,8 @@ Your pieces:
 - Status: It's your turn to make a move. Enter your command.
 0
 ======================================================================
-Stock pieces:  13
-Computer pieces:  4
+- Stock pieces:  14
+- Computer pieces:  6
 
 [1, 4][4, 4][4, 3][3, 6][6, 6][6, 1]
 
