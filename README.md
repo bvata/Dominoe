@@ -13,10 +13,13 @@ Dominoe project
 - The Computer has AI integrated to choose the best piece to mode, so there is some level of inteligence added in order to give some chances to the Computer to win.
 - Enjoy
 
-======================================================================
-Example:
 
-Step1
+
+
+
+
+
+Example: Step1
 ======================================================================
 Stock pieces:  14
 Computer pieces:  6
