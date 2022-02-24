@@ -3,6 +3,8 @@ Dominoe project
 
 ## Dominoe - Instructions:
 
+This is the description of the example on how to use the game, the points below refer to some steps(ex. Step1, Step2 ...)
+
 - So here we have the pieces in the field: [3, 6][6, 6] and the status is that is the player's turn (moves are 0,+int,-int) so we choose int 5 which in ""Your pieces:", is 5:[1, 6] .
 - When you type a positive integer like 5 the piece you selected from "Your pieces:", the piece "[1, 6]" moves to the right (follow arrow <----)
 - When we want to move the piece to the left of the snake we type -int like the example below:
@@ -19,7 +21,7 @@ Dominoe project
 
 
 
-**Example: 
+## Dominoe - Example:
 ======================================================================
 
 Step1
