@@ -19,7 +19,10 @@ Dominoe project
 
 
 
-Example: Step1
+Example: 
+
+
+Step1
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
