@@ -22,7 +22,7 @@ This is the description of the example on how to use the game, the points below 
 
 
 ## Dominoe - Example:
-======================================================================
+
 
 Step1
 ======================================================================
