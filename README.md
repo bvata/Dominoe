@@ -24,7 +24,7 @@ This is the description of the example on how to use the game, the points below 
 ## Dominoe - Example:
 
 
-Step1
+Example1 : When you want to enter a piece on the right side of the snake
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
@@ -56,7 +56,7 @@ Your pieces:
 
 - Status: Computer is about to make a move. Press Enter to continue...
 
-Step 2
+Example 2 : When you want to enter a piece on the left side of the snake
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
@@ -86,7 +86,7 @@ Your pieces:
 
 - Status: Computer is about to make a move. Press Enter to continue...
 
-Step 3 
+Example 3 : When you do not have pieces to submit in the field, or if you want to take extra pieces
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
@@ -111,3 +111,7 @@ Your pieces:
 2:[0, 3]
 3:[1, 5]
 4:[2, 6]
+
+The computer automatically selects a piece of takes from the stock so you just need to pres "Enter" in the keyboard
+======================================================================
+
