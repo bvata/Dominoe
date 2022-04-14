@@ -23,8 +23,20 @@ This is the description of the example on how to use the game, the points below 
 
 ## Dominoe - Example:
 
+Description:
+<index>:[x,y] , where the index in the piece index in your hand, imagine when you play, you have pieces ordered in your hand. This is what refers to this index.
+[x,y] , brackets imply the dominoe piece with two sides and x,y are nr from 0 to 6 on both sides.
 
-Example1 : When you want to enter a piece on the right side of the snake
+Your pieces:
+1:[4, 4]
+2:[2, 2]
+3:[0, 3]
+4:[1, 5]
+5:[1, 6]
+6:[2, 6]
+
+
+Example1 : When you want to enter a piece on the right side of the snake, you need to input a positive nr, like 5 is the index(nr of the peiece 5:[1, 6] as explained in the "Description".
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
@@ -56,7 +68,7 @@ Your pieces:
 
 - Status: Computer is about to make a move. Press Enter to continue...
 
-Example 2 : When you want to enter a piece on the left side of the snake
+Example 2 :  When you want to enter a piece on the left side of the snake, you need to input a negative nr, like -<index of the piece in the hand>,(index of the piece 1 which is in this case is 1:[4, 4] as explained in the "Description".)
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
@@ -86,7 +98,7 @@ Your pieces:
 
 - Status: Computer is about to make a move. Press Enter to continue...
 
-Example 3 : When you do not have pieces to submit in the field, or if you want to take extra pieces
+Example 3 : When you do not have pieces to submit in the field, or if you want to take extra pieces you just need to enter 0 when is players turn.
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
