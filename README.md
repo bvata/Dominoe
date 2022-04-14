@@ -52,7 +52,7 @@ Your pieces:
 6:[2, 6]
 
  - Status: It's your turn to make a move. Enter your command.
-5
+5 <---- you see in this section when is the players turn, you enter a positive index , like 5 in our example.
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
@@ -83,7 +83,7 @@ Your pieces:
 5:[2, 6]
 
 - Status: It's your turn to make a move. Enter your command.
--1
+-1 <--- if you see here when is the player turn to enter an index, you see is "negative 1", which the negative sign, implies that the piece will go in the left of the snake next to [4,3] in the field pieces. If we would input "positive one" if would go in the right side like Example 1, but in this case the game would not accespt it cause it has a control that checks if you can put a piece either to the left or the right side.
 ======================================================================
 - Stock pieces:  14
 - Computer pieces:  6
